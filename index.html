@@ -56,16 +56,42 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
+      .penjatuh-pilihan { /* Dropdown */
+            position: relative;
+            display: inline-block;
+        }
+
+        .isi-penjatuh-pilihan { /* Dropdown content */
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .isi-penjatuh-pilihan a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .isi-penjatuh-pilihan a:hover {background-color: #ddd;}
+
+        .penjatuh-pilihan:hover .isi-penjatuh-pilihan {
+            display: block;
+        }
     </style>
   </head>
   <body>
-    <div class="atas">
+    <div class="atas top-0">
       <!-- ATAS -->
       <div class="atas-1 text-center bg-black text-white text-[13px] py-[5px] font-[dior] px-[135px]">
         <h1><b class="text-[16px] ml-[300px]">Member Exclusive</b> | Receive Rouge Dior Lipstick & Cleansing Milk mini with min spend of Rp 2,500,000 <i class="fa-solid fa-location-dot ml-[287px]"></i> Find Stores</h1>
       </div>
       <!-- NAVBAR 1 -->
-      <div class="atas-2 w-full">
+      <div class="atas-2 w-full top-0">
         <ul class="font-[dior] ml-16 text-[13px] flex flex-col flex flex-col p-4 md:p-0 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
           <li class="mt-5 ml-2 block hover:underline hover:underline-offset-8 items-center">FASHION & ACCESORIES</li>
           <li class="mt-5 ml-5 block hover:underline hover:underline-offset-8">FRAGRANCE & BEAUTY</li>
@@ -92,7 +118,7 @@
       </div>
       <hr class="h-px my-4 bg-gray-200 dark:bg-gray-100" />
       <!-- NAVBAR 2 -->
-      <div class="flex flex-row">
+      <div class="flex flex-row top-0">
         <ul class="ml-[71px] mb-4 md:p-0 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 hover:underline hover:underline-offset-8">
           <li
             id="dropdownHoverButton"
@@ -169,10 +195,10 @@
           </ul>
         </div>
 
-        <div class="dropdown text-[13px] font-[dior] ml-[46px] mb-4 md:p-0 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 hover:underline hover:underline-offset-8">
-            <button class="dropbtn hover:underline hover:underline-offset-8 py-[4px]">LA COLLECTION PRIVEE CHRISTIAN DIOR</button>
-            <div class="dropdown-content hover:underline hover:underline-offset-8 w-full">
-                <div class="w-full"></div>
+        <div class="dropdown text-[13px] font-[dior] ml-[46px] mb-4 md:p-0 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+            <button class="dropbtn hover:underline hover:underline-offset-8 py-[4px] ">LA COLLECTION PRIVEE CHRISTIAN DIOR</button>
+            <div class="dropdown-content w-[720px]">
+                <div class="w-[720px]"></div>
                 <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">LA COLLECTION PRIVEE HOMEPAGE</a>
                 <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">THE FRAGRANCES</a>
                 <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">HAIR MISTS</a>
@@ -182,8 +208,204 @@
                 <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">BEST SELLERS</a>
             </div>
           </div>
+        <div class="dropdown text-[13px] font-[dior] mb-4 md:p-0 md:space-x-8 rtl:space-x-reverse ml-[36px]">
+            <button class="dropbtn hover:underline hover:underline-offset-8 py-[4px]">MAKE UP</button>
+            <div class="dropdown-content w-[720px]" >
+                <div class="w-96"></div>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">MAKE UP HOMEPAGE</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">FACE</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">EYES</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">LIPS</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">DIOR BACKSTAGE</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">NEW ARRIVALS</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">BEST SELLERS</a>
+            </div>
+          </div>
+            <div class="penjatuh-pilihan text-[13px] font-[dior] mb-4 md:p-0 md:space-x-8 rtl:space-x-reverse ml-[36px] my-[4 px]">
+              <button class="dropbtn hover:underline hover:underline-offset-8 py-[4px]">SKINCARE  </button>
+              <div class="isi-penjatuh-pilihan  w-[650px]">
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">SKINCARE HOMEPAGE</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">COLLECTION</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">CATEGORIES</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">CONCERNS</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">NEW ARRIVALS</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">BEST SELLERS</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">ALL SKINCARE PRODUCTS</a>
+              </div>
+          </div>
+            <div class="penjatuh-pilihan text-[13px] font-[dior] mb-4 md:p-0 md:space-x-8 rtl:space-x-reverse ml-[36px] my-[4 px]">
+              <button class="dropbtn hover:underline hover:underline-offset-8 py-[4px]">GIFTS </button>
+              <div class="isi-penjatuh-pilihan  w-[560px]">
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">GIFT SET</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">THE ART OF GIVING</a>
+              </div>
+          </div>
+            <div class="penjatuh-pilihan text-[13px] font-[dior] mb-4 md:p-0 md:space-x-8 rtl:space-x-reverse ml-[36px] my-[4 px]">
+              <button class="dropbtn hover:underline hover:underline-offset-8 py-[4px]">OUR COMMITMENTS </button>
+              <div class="isi-penjatuh-pilihan  w-[500px]">
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">OUR COMMITMENTS</a>
+                <a href="#" class="font-bold ml-[54px] text-[13px] font-[dior] block px-4 pt-4 pb-3 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-100">RESPONSIBLE BEAUTY</a>
+              </div>
+          </div>
+            <div class="penjatuh-pilihan text-[13px] font-[dior] mb-4 md:p-0 md:space-x-8 rtl:space-x-reverse ml-[36px] my-[4 px]">
+              <button class="dropbtn hover:underline hover:underline-offset-8 py-[4px]">ABOUT DIOR </button>
+          </div>
+        </div>
+    </div>
+          
       </div>
     </div>
+
+
+    <!-- ISI -->
+    <div>
+      <img src="./images/atas.jpg" class="w-full" alt="">
+      <div class="text-center mt-5">
+        <h1 class="text-[13px] font-[dior] text-[#BEBEBE] mt-2">MAKE UP</h1>
+        <h1 class="text-[16px] font-[dior] text-[#303030] mt-2">NEW FOREVER GLOW MAXIMIZER</h1>
+        <button type="button" class="text-[#303030] font-[dior] border border-gray-900  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 mt-2 py-2.5 text-center me-2 mb-2 dark:border-gray-900 dark:text-[#303030] dark:focus:ring-blue-800">DISCOVER</button>
+      </div>
+    </div>
+    <div class="mt-10">
+      <img src="./images/2.jpg" class="w-full" alt="">
+      <div class="text-center mt-5">
+        <h1 class="text-[13px] font-[dior] text-[#BEBEBE] mt-2">FRAGRANCE</h1>
+        <h1 class="text-[16px] font-[dior] text-[#303030] mt-2">J'ADORE LES ADORABLES</h1>
+        <button type="button" class="text-[#303030] font-[dior] border border-gray-900  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 mt-2 py-2.5 text-center me-2 mb-2 dark:border-gray-900 dark:text-[#303030] dark:focus:ring-blue-800">DISCOVER</button>
+      </div>
+    </div>
+    <div class="mt-10">
+      <img src="./images/3.jpg" class="w-full" alt="">
+      <div class="text-center mt-5">
+        <h1 class="text-[13px] font-[dior] text-[#BEBEBE] mt-2">LA COLLECTION PRIVEE</h1>
+        <h1 class="text-[16px] font-[dior] text-[#303030] mt-2">NEW COUTURE EDITION</h1>
+        <button type="button" class="text-[#303030] font-[dior] border border-gray-900  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 mt-2 py-2.5 text-center me-2 mb-2 dark:border-gray-900 dark:text-[#303030] dark:focus:ring-blue-800">DISCOVER</button>
+      </div>
+    </div>
+    <div class="mt-10">
+      <img src="./images/4.jpg" class="w-full" alt="">
+      <div class="text-center mt-5">
+        <h1 class="text-[13px] font-[dior] text-[#BEBEBE] mt-2">MAKE UP</h1>
+        <h1 class="text-[16px] font-[dior] text-[#303030] mt-2">ROUGE DIOR</h1>
+        <button type="button" class="text-[#303030] font-[dior] border border-gray-900  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 mt-2 py-2.5 text-center me-2 mb-2 dark:border-gray-900 dark:text-[#303030] dark:focus:ring-blue-800">DISCOVER</button>
+      </div>
+    </div>
+    <div class="mt-10">
+      <img src="./images/5.jpg" class="w-full" alt="">
+      <div class="text-center mt-5">
+        <h1 class="text-[13px] font-[dior] text-[#BEBEBE] mt-2">FRAGRANCE</h1>
+        <h1 class="text-[16px] font-[dior] text-[#303030] mt-2">SAUVAGE MENCARE</h1>
+        <button type="button" class="text-[#303030] font-[dior] border border-gray-900  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 mt-2 py-2.5 text-center me-2 mb-2 dark:border-gray-900 dark:text-[#303030] dark:focus:ring-blue-800">DISCOVER</button>
+      </div>
+    </div>
+    <div class="mt-10">
+      <img src="./images/6.jpg" class="w-full" alt="">
+      <div class="text-center mt-5">
+        <h1 class="text-[13px] font-[dior] text-[#BEBEBE] mt-2">SKINCARE</h1>
+        <h1 class="text-[16px] font-[dior] text-[#303030] mt-2">DIORSNOW</h1>
+        <button type="button" class="text-[#303030] font-[dior] border border-gray-900  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 mt-2 py-2.5 text-center me-2 mb-2 dark:border-gray-900 dark:text-[#303030] dark:focus:ring-blue-800">DISCOVER</button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    
+
+<footer class="bg-white mt-16 font-[dior]">
+  <div class="mx-auto w-full max-w-screen-xl">
+    <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+      <div>
+          <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase">CLIENT SERVICE</h2>
+          <ul class="text-gray-900  font-medium">
+              <li class="mb-4">
+                  <a href="#" class="">Contact Parfums Christian Dior</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="">Delivery & Returns</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="">FAQ</a>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase font-[dior]">FIND A BOUTIQUE</h2>
+          <ul class="text-gray-900  font-medium">
+              <li class="mb-4">
+                  <a href="#" class="">Parfums Christian Dior Boutiques</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="">Chirstian Dior Couture Boustiques</a>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase font-[dior]">THE HOUSE OF DIOR</h2>
+          <ul class="text-gray-900  font-medium">
+              <li class="mb-4">
+                  <a href="#" class="">Legal Terms and Conditions</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="">Privacy Policy</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="">Cookies Policy</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="">Careers</a>
+              </li>
+  
+          </ul>
+      </div>
+      <div>
+        <h2 class="mb-6 text-sm font-bold text-gray-900 uppercase "><i class="fa-solid fa-location-dot mr-2"></i> Find a Store </h2>
+
+        <ul class="text-gray-900  font-medium">
+          <li class="font-[dior]">
+            Follow us :
+          </li>
+          <li class="mt-2">
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-tiktok ml-3 mb-1"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-x-twitter ml-3"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-facebook ml-3"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-snapchat ml-3"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+  </div>
+  <hr class="h-px my-4 bg-gray-200 dark:bg-gray-900">
+  <div class="flex flex-col items-center">
+    <svg class=" max-w-full max-h-full" width="82" height="24" viewBox="0 0 82 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M58.4439 12.0087C58.4439 18.6204 53.8686 24 46.6078 24C39.4962 24 34.7717 18.603 34.7717 11.9913C34.7717 5.37961 39.3139 0 46.6078 0C53.9184 0 58.4439 5.39696 58.4439 12.0087ZM0.258424 0.468506H10.901C20.0516 0.468506 23.6323 6.09107 23.6323 12.0433C23.6323 18.0997 19.0404 23.4967 10.3042 23.4967H0.275001C0.0926517 23.4967 0.0263428 23.3752 0.0263428 23.2711C0.0263428 23.1496 0.142383 23.0455 0.308156 23.0455H2.18138C2.76158 23.0455 3.14286 22.6811 3.14286 22.0043V1.99562C3.14286 1.49237 2.91078 0.937053 2.14823 0.937053H0.241847C0.0926517 0.937053 0.00976562 0.832931 0.00976562 0.711456C0.00976562 0.607334 0.0429201 0.468506 0.258424 0.468506ZM6.9054 22.4208C6.9054 22.924 7.1209 23.0802 7.43587 23.0802H10.254C17.1999 23.0802 19.7196 17.5097 19.7196 11.9218C19.7196 6.33399 17.0507 0.919678 11.1823 0.919678H7.35298C6.95513 0.919678 6.92197 1.26675 6.92197 1.42293L6.9054 22.4208ZM24.3781 0.676749C24.3781 0.53792 24.5272 0.468506 24.693 0.468506V0.485859H33.6779C33.8769 0.485859 33.9597 0.589981 33.9597 0.711456C33.9597 0.832931 33.8769 0.919699 33.7277 0.919699H32.0202C31.3903 0.919699 31.0421 1.30148 31.0421 1.87415V22.1084C31.0421 22.9067 31.7218 23.0629 31.9705 23.0629H33.7111C33.9432 23.0629 33.9763 23.2017 33.9763 23.3405C33.9763 23.4794 33.794 23.4967 33.6614 23.4967H24.6433C24.4088 23.4967 24.4102 23.3887 24.4111 23.3181L24.4112 23.3058C24.4112 23.2364 24.4278 23.0629 24.6433 23.0629H26.4999C27.0304 23.0629 27.3288 22.4381 27.3288 22.0217V2.08239C27.3288 1.21471 26.9144 0.902345 26.4834 0.902345H24.6101C24.4609 0.902345 24.3781 0.815578 24.3781 0.676749ZM38.7838 11.9913C38.7838 5.62252 41.5024 0.468506 46.6082 0.468506C51.6145 0.468506 54.4326 5.62252 54.4326 11.9913C54.4326 18.3601 51.8632 23.5141 46.6082 23.5141C41.519 23.5314 38.7838 18.3601 38.7838 11.9913ZM81.652 23.3579C79.4557 23.5985 78.0167 20.75 76.8123 18.3658C76.4532 17.6549 76.115 16.9853 75.7837 16.4512C74.7062 14.7331 72.4185 12.9804 70.164 12.6334C73.8773 12.4078 78.0382 11.1583 78.0382 6.7505C78.0382 3.17566 75.9329 0.468506 68.2079 0.468506H59.306C59.19 0.468506 59.0739 0.53792 59.0739 0.676749C59.0739 0.815578 59.19 0.902345 59.306 0.902345H61.345C61.776 0.902345 62.1904 1.21471 62.1904 2.08239V22.0217C62.1904 22.4381 61.892 23.0629 61.3616 23.0629H59.3557C59.19 23.0629 59.1236 23.2017 59.1236 23.2711C59.1236 23.3405 59.19 23.4967 59.3557 23.4967H68.8047C68.9373 23.4967 69.0534 23.4273 69.0534 23.2885C69.0534 23.1496 68.9705 23.0629 68.7881 23.0629H66.8818C66.6331 23.0629 65.9534 22.8893 65.9534 22.1084V12.6854H66.9315C70.1646 12.6854 71.3281 15.2254 72.5061 17.7966C73.0313 18.9431 73.5594 20.0959 74.2752 21.0325C76.2644 23.6355 78.8671 23.9653 80.3424 23.9653C80.9724 23.9653 81.4034 23.9479 81.8012 23.8438C82.0499 23.757 82.0996 23.3058 81.652 23.3579ZM68.275 0.902344H66.8991C66.2691 0.902344 65.921 1.28412 65.921 1.87414V12.2342H67.9268C71.0599 12.2342 74.4416 10.7939 74.4416 6.5249C74.4416 1.87414 70.6289 0.902344 68.275 0.902344Z"
+        fill="black"
+      ></path>
+      <br>
+      <h1 class="text-center text-[303030] font-[dior]">Privacy Policy <span class="mx-10">Terms and Conditions </span>    Cookies Policy</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+  </div>
+  </div>
+</footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </body>
